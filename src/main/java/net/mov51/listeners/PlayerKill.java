@@ -1,9 +1,13 @@
 package net.mov51.listeners;
 
+import org.bukkit.Location;
+import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.PlayerDeathEvent;
+
+import static net.mov51.PlayerHeadHelper.dropPlayerHead;
 
 public class PlayerKill implements Listener {
     //Listen for Player Death event
@@ -17,6 +21,7 @@ public class PlayerKill implements Listener {
             //Clears the items for the event because they drop anyway (Yay!)
             e.getDrops().clear();
             System.out.println("keep inventory saved");
+            dropPlayerHead(e.getEntity(), e.getEntity().getLocation());
         }
     }
 }
