@@ -1,0 +1,7 @@
+name: NoPlayerKillPlz
+version: ${project.version}
+main: net.mov51.NoPlayerKillPlz
+api-version: 1.16
+prefix: NoPlayerKillPlz
+authors: [ mov51 ]
+description: NoPlayerKillPlz
