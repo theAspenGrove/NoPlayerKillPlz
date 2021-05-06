@@ -20,7 +20,7 @@ public class PlayerKill implements Listener {
             e.setKeepInventory(true);
             //Clears the items for the event because they drop anyway (Yay!)
             e.getDrops().clear();
-            System.out.println("keep inventory saved");
+            System.out.println("[NoPlayerKillPLZ] - Player inventory saved after a Player Kill!");
             dropPlayerHead(e.getEntity(), e.getEntity().getLocation());
         }
     }
